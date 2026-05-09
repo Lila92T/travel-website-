@@ -1,0 +1,119 @@
+#upcoming {
+  padding: 4% 8%;
+  background: var(--desert-sand);
+}
+
+.upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.upcoming-grid .deal-card {
+  border: 1.5px solid var(--desert-sand);
+  border-radius: 1rem;
+  background: var(--bg);
+  box-shadow: 0 1px 6px rgba(44,47,56,0.10);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.upcoming-grid .deal-card:hover {
+  box-shadow: 0 4px 20px rgba(44,47,56,0.12);
+  transform: translateY(-3px);
+}
+.upcoming-grid .deal-card .card-top {
+  background: var(--text);
+  padding: 18px 18px 14px;
+}
+.upcoming-grid .deal-card .card-top .date {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase; 
+  color: var(--desert-sand);
+  display: block;
+  margin-bottom: 6px;
+}
+.upcoming-grid .deal-card .card-top h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--bg);
+  line-height: 1.5;
+}
+.upcoming-grid .deal-card .card-body {
+  padding: 10px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.upcoming-grid .deal-card .card-body .route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+.upcoming-grid .deal-card .card-body .route i {
+  color: var(--cactus);
+  font-size: 1.5rem;
+}
+.upcoming-grid .deal-card .card-body .spots {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.upcoming-grid .deal-card .card-body .spots.low {
+  color: var(--terracotta);
+}
+.upcoming-grid .deal-card .card-body .spots.mid {
+  color: var(--cactus);
+}
+.upcoming-grid .deal-card .card-body .spots i{
+  font-size: 1.5rem;
+}
+.upcoming-grid .deal-card .card-body .pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1.5px solid var(--desert-sand);
+}
+.card-body .pricing .price .from {
+  font-size: 1.3rem;
+  color: #4a4a4a;
+  display: block;
+}
+.card-body .pricing .price h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--terracotta);
+}
+.card-body .pricing .btn {
+  background: var(--terracotta);
+  color: var(--bg);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.card-body .pricing .btn:hover {
+  background: var(--text);
+}
+
+
+/* ==== media ==== */
+@media (max-width:1024px) { 
+  .upcoming-grid { 
+    grid-template-columns: 1fr 1fr; 
+  } 
+}
+
+@media (max-width: 800px) {
+  .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background: linear-gradient(135deg, var(--charcoal) 0%, #3d414d 100%);
+  padding: 60px 8%;
+}
+
+/* Left side */
+#about .sub-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--terracotta);
+  margin-bottom: 0.5rem;
+}
+#about h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--bg);
+  line-height: 1.5;
+}
+#about .about-left p {
+  font-size: 1.3rem;
+  color: var(--desert-sand);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Stats grid */
+#about .stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+#about .stats .stat {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 20px;
+  font-size: 1.3rem;
+  color: #e2d8d7b8;
+  font-weight: 500;
+}
+#about .stats .stat span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--terracotta);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+/* ==== media ==== */
+@media (max-width: 800px) {
+  #about {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}

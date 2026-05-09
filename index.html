@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exlore Dzair</title>
+    <!--   font link   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--   bootstrap link   -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!--   cdn icon link   -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--   css links   -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/destinations.css" />
+    <link rel="stylesheet" href="css/tours.css" />
+    <link rel="stylesheet" href="css/upcoming.css" />
+    <link rel="stylesheet" href="css/review.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!--   the header   -->
+
+    <header class="site-header">
+      <!--  logo  -->
+      <a href="#" class="logo">
+        <i class="fas fa-campground"></i> Explore<span>Dszair</span>.
+      </a>
+
+      <input type="checkbox" name="" id="hmbrgr" />
+
+      <!--  nav bar  -->
+      <nav class="navbar">
+        <a href="#destinations">Destinations</a>
+        <a href="#tours">Tours</a>
+        <a href="#upcoming">upcoming</a>
+        <a href="#review">review</a>
+        <a href="#about">about us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!--  action__btns  -->
+      <div class="actions-btn">
+        <button class="btn-header-ghost">Sign In</button>
+        <button class="btn-header-bright">Register</button>
+      </div>
+      <!--  icons  -->
+      <div class="icons">
+        <!--  hamburger  -->
+        <label for="hmbrgr" id="menu-btn" class="fas fa-bars"></label>
+      </div>
+    </header>
+
+    <!--   the main   -->
+    <main>
+      <!--  HERO  -->
+      <section id="hero" class="hero-section">
+        <!--   bootstrap  carousel   -->
+        <div
+          id="heroCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="IMGS/display/alger.jpg"
+                class="d-block w-100"
+                alt="Algiers coast"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <span class="hero-eyebrow">algeria local travel platform</span>
+                <h3>coastal wonders</h3>
+                <p>Discover breathtaking landscapes and Berber villages.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="IMGS/display/djemila.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <span class="hero-eyebrow">UNESCO World Heritage</span>
+                <h3>roman heritage</h3>
+                <p>
+                  Wander through centuries of history and culture at some of
+                  north africa's ancient sites.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="IMGS/display/Djanet-Tassili-NAjjer.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <span class="hero-eyebrow">saharan adventure</span>
+                <h3>desert adventure</h3>
+                <p>
+                  Experience the endless golden dunes of the prehistoric rock
+                  art of the south.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!--   search widget __ floats over carousel bottom __ overlaps trust bar   -->
+        <div class="search-widget-wrap">
+          <div class="search-widget">
+            <div class="search-tabs">
+              <button class="search-tab active" onclick="setTab(this)">
+                <i class="fas fa-compass"></i>tours
+              </button>
+              <button class="search-tab" onclick="setTab(this)">
+                <i class="fas fa-map-pin"></i>destinations
+              </button>
+              <button class="search-tab" onclick="setTab(this)">
+                <i class="fas fa-sliders"></i>custom trip
+              </button>
+            </div>
+            <div class="search-body">
+              <div class="search-fields">
+                <div class="search-field">
+                  <label>Where to?</label>
+                  <div class="input-wrap">
+                    <i class="fas fa-search"></i>
+                    <input
+                      type="text"
+                      placeholder="Destination, region or tour name"
+                    />
+                  </div>
+                </div>
+                <div class="search-field">
+                  <label>Travel Date</label>
+                  <div class="input-wrap">
+                    <i class="fas fa-calendar"></i>
+                    <input type="text" placeholder="Choose date" />
+                  </div>
+                </div>
+                <div class="search-field">
+                  <label>Travellers</label>
+                  <div class="input-wrap">
+                    <i class="fas fa-users"></i>
+                    <select>
+                      <option>1 adult</option>
+                      <option>2 adults</option>
+                      <option>3 adults</option>
+                      <option>4+ adults</option>
+                      <option>Group (8+)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="search-field">
+                  <label>&nbsp;</label>
+                  <button class="btn-search">
+                    <i class="fas fa-search"></i> Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--   TRUST BAR   -->
+      <div class="trust-bar">
+        <div class="trust-inner">
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fas fa-map-pin"></i></div>
+            <div>
+              <h4>100% Local Guides</h4>
+              <p>Born & raised in every region we tour</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fas fa-shield"></i></div>
+            <div>
+              <h4>Licensed & Insured</h4>
+              <p>Fully certified with Algerian tourism ministry</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fas fa-leaf"></i></div>
+            <div>
+              <h4>Responsible Tourism</h4>
+              <p>Low-impact travel that gives back locally</p>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon"><i class="fas fa-star"></i></div>
+            <div>
+              <h4>4.9 / 5 Rating</h4>
+              <p>Based on 800+ verified traveller reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  DESTINATIONS  -->
+      <section id="destinations" class="destinations">
+        <div class="section-head">
+          <div class="section-head-left">
+            <div class="sub-title">Where to go</div>
+            <h2>Top <span>Destinations</span> in Algeria</h2>
+          </div>
+          <a href="#contact" class="link-all"
+            >View all destinations <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="dest-grid">
+          <!--  taghit  -->
+          <div class="card">
+            <div class="destination-img">
+              <img
+                src="IMGS/cities/Taghit & the Grand Erg Occidental.webp"
+                alt="taghit dunes"
+              />
+              <span class="region">Béchar · Southwest</span>
+              <span class="rating"><i class="fas fa-star"></i>4.9</span>
+            </div>
+            <div class="dest-body">
+              <h3>taghit - the star of the desert</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                explicabo at tempora ducimus qui delectus non esse tempore
+                ratione nostrum.
+              </p>
+              <div class="dest-tags">
+                <span class="dest-tag">🏜️ Desert</span>
+                <span class="dest-tag">🌅 Sunset</span>
+                <span class="dest-tag">🏺 Heritage</span>
+              </div>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span>From</span> <strong>38 000 DA</strong>
+                </div>
+                <button
+                  class="btn-yellow-sm"
+                  onclick="location.href = '#contact'"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--  djmila  -->
+          <div class="card">
+            <div class="destination-img">
+              <img
+                src="IMGS/cities/Timgad – Rome of Africa.jpg"
+                alt="Djémila Roman ruins"
+              />
+              <span class="region">Sétif · Northeast</span>
+              <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+            </div>
+            <div class="dest-body">
+              <h3>Djémila — Rome in the Mountains</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis doloremque voluptas dignissimos eum aliquid, ullam
+                excepturi ea, rerum error sapiente ipsum? Aut necessitatibus sit
+                voluptate sequi, cupiditate quas alias nesciunt.
+              </p>
+              <div class="dest-tags">
+                <span class="dest-tag">🏛️ Roman Ruins</span>
+                <span class="dest-tag">🌿 Nature</span>
+                <span class="dest-tag">🎖️ UNESCO</span>
+              </div>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span>From</span> <strong>22 000 DA</strong>
+                </div>
+                <button
+                  class="btn-yellow-sm"
+                  onclick="location.href = '#contact'"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--  tasili  -->
+          <div class="card">
+            <div class="destination-img">
+              <img
+                src="IMGS/cities/Tassili_Desert_Algeria.jpg"
+                alt="Tassili n'Ajjer"
+              />
+              <span class="region">Djanet · Far South</span>
+              <span class="rating"><i class="fas fa-star"></i> 5.0</span>
+            </div>
+            <div class="dest-body">
+              <h3>Tassili n'Ajjer — Gallery of the Ancients</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                corporis ut excepturi? Adipisci veritatis et, iure facere nobis
+                velit, quos esse animi veniam fugit sequi praesentium placeat
+                iusto deserunt corporis ullam repudiandae, cupiditate aliquam
+                aspernatur
+              </p>
+              <div class="dest-tags">
+                <span class="dest-tag">🪨 Rock Art</span>
+                <span class="dest-tag">🦅 Wildlife</span>
+                <span class="dest-tag">🎖️ UNESCO</span>
+              </div>
+              <div class="dest-footer">
+                <div class="dest-price">
+                  <span>From</span> <strong>65 000 DA</strong>
+                </div>
+                <button
+                  class="btn-yellow-sm"
+                  onclick="location.href = '#contact'"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  TOURS  -->
+      <section id="tours">
+        <div class="section-head">
+          <div class="section-head-left">
+            <div class="sub-title">curated packages</div>
+            <h2>featured <span>tour packages</span></h2>
+          </div>
+          <a href="#contact" class="link-all"
+            >All tours<i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="tours-list">
+          <!--   tour 1   -->
+          <div class="tour-card">
+            <div class="tour-img">
+              <img src="IMGS/display/bechar-Taghit-1.jpg" alt="" />
+            </div>
+            <div class="tour-body">
+              <h3>Grand sahara circuit</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                quaerat inventore commodi vel explicabo error ut consequuntur
+                quisquam repellat suscipit quis, harum ab eveniet sequi autem
+                repudiandae quam praesentium cupiditate!
+              </p>
+              <div class="tour-info">
+                <span><i class="fas fa-calendar-alt"></i> 10 days</span>
+                <span><i class="fas fa-users"></i> max 12 travellers</span>
+                <span><i class="fas fa-gauge-high"></i> moderate</span>
+              </div>
+
+              <div class="tour-highlights">
+                <span class="highlight">🐪 Camel trek</span>
+                <span class="highlight">🌙 Desert camping</span>
+                <span class="highlight">🍲 Local cuisine</span>
+              </div>
+            </div>
+            <div class="pricing">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <h4>135 000</h4>
+                <span class="per">DA / person</span>
+              </div>
+              <button class="btn-book">Book Now</button>
+            </div>
+          </div>
+          <!--   tour 2   -->
+          <div class="tour-card">
+            <div class="tour-img">
+              <img src="IMGS/display/djemila.webp" alt="" />
+            </div>
+            <div class="tour-body">
+              <h3>roman legacy trail</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                quaerat inventore commodi vel explicabo error ut consequuntur
+                quisquam repellat suscipit quis, harum ab eveniet sequi autem
+                repudiandae quam praesentium cupiditate!
+              </p>
+              <div class="tour-info">
+                <span><i class="fas fa-calendar-alt"></i> 7 days</span>
+                <span><i class="fas fa-users"></i> max 10 travellers</span>
+                <span><i class="fas fa-gauge-high"></i> Easy</span>
+              </div>
+
+              <div class="tour-highlights">
+                <span class="highlight">🏛️ 3 UNESCO sites</span>
+                <span class="highlight">🫒 Olive grove visit</span>
+                <span class="highlight">🛁 Hammam day</span>
+              </div>
+            </div>
+            <div class="pricing">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <h4>70 000</h4>
+                <span class="per">DA / person</span>
+              </div>
+              <button class="btn-book">Book Now</button>
+            </div>
+          </div>
+          <!--   tour 3   -->
+          <div class="tour-card">
+            <div class="tour-img">
+              <img src="IMGS/display/bedjaia.jpg" alt="" />
+            </div>
+            <div class="tour-body">
+              <h3>mediterranean escape</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                quaerat inventore commodi vel explicabo error ut consequuntur
+                quisquam repellat suscipit quis, harum ab eveniet sequi autem
+                repudiandae quam praesentium cupiditate!
+              </p>
+              <div class="tour-info">
+                <span><i class="fas fa-calendar-alt"></i> 6 days</span>
+                <span><i class="fas fa-users"></i> max 15 travellers</span>
+                <span><i class="fas fa-gauge-high"></i> Easy</span>
+              </div>
+
+              <div class="tour-highlights">
+                <span class="highlight">🏖️ Hidden beaches</span>
+                <span class="highlight">🎨 Kabylie art</span>
+                <span class="highlight">🐟 Seafood nights</span>
+                <span class="highlight">🌅 Coastal hike</span>
+              </div>
+            </div>
+            <div class="pricing">
+              <div class="tour-price">
+                <span class="from">From</span>
+                <h4>50 000</h4>
+                <span class="per">DA / person</span>
+              </div>
+              <button class="btn-book">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  UPCOMING  -->
+      <section id="upcoming">
+        <div class="section-head">
+          <div class="section-head-left">
+            <div class="sub-title">Limited Availability</div>
+            <h2>Upcoming <span>Departures</span></h2>
+          </div>
+          <a href="#contact" class="link-all"
+            >View all dates <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="upcoming-grid">
+          <div class="deal-card">
+            <div class="card-top">
+              <span class="date">14 Oct 2026 . 10 days</span>
+              <h4>Grand Sahara circuit (Best Season)</h4>
+            </div>
+            <div class="card-body">
+              <div class="route">
+                <i class="fas fa-route"></i>Béchar → Taghit → Tasili
+              </div>
+              <div class="spots low">
+                <i class="fas fa-fire"></i> Only 3 spots remaining
+              </div>
+              <div class="pricing">
+                <div class="price">
+                  <span class="from">From</span>
+                  <h4>140 000 DA</h4>
+                </div>
+                <button class="btn">Reserve</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="deal-card">
+            <div class="card-top">
+              <span class="date">05 Jul 2026 . 7 days</span>
+              <h4>Roman Legacy Trail</h4>
+            </div>
+            <div class="card-body">
+              <div class="route">
+                <i class="fas fa-route"></i>Alger → Tipaza → Djémila → Timgad
+              </div>
+              <div class="spots low">
+                <i class="fas fa-fire"></i> 5 spots remaining
+              </div>
+              <div class="pricing">
+                <div class="price">
+                  <span class="from">From</span>
+                  <h4>70 000 DA</h4>
+                </div>
+                <button class="btn">Reserve</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="deal-card">
+            <div class="card-top">
+              <span class="date">20 Jun 2026 . 7 days</span>
+              <h4>Mediterranean Escape</h4>
+            </div>
+            <div class="card-body">
+              <div class="route">
+                <i class="fas fa-route"></i>Alger → Béjaïa → Jijel → Skikda →
+                Annaba
+              </div>
+              <div class="spots mid">
+                <i class="fas fa-circle-check"></i> 8 spots available
+              </div>
+              <div class="pricing">
+                <div class="price">
+                  <span class="from">From</span>
+                  <h4>55 000 DA</h4>
+                </div>
+                <button class="btn">Reserve</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="deal-card">
+            <div class="card-top">
+              <span class="date">30 Dec 2026 . 7 days</span>
+              <h4>Highlands Circuit</h4>
+            </div>
+            <div class="card-body">
+              <div class="route">
+                <i class="fas fa-route"></i>Djurdjura → Tizi Ouzou → Akfadou →
+                Jijel
+              </div>
+              <div class="spots mid">
+                <i class="fas fa-circle-check"></i> 10 spots available
+              </div>
+              <div class="pricing">
+                <div class="price">
+                  <span class="from">From</span>
+                  <h4>60 000 DA</h4>
+                </div>
+                <button class="btn">Reserve</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  REVIEW  -->
+      <section id="review">
+        <div class="section-head">
+          <div class="section-head-left">
+            <div class="sub-title">Verified Reviews</div>
+            <h2>What <span>Travellers Say</span></h2>
+          </div>
+          <a href="#contact" class="link-all"
+            >All reviews <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+        <div class="reviews-grid">
+          <ul class="review-container">
+            <li>
+              <div class="author-info">
+                <div class="avatar">SC</div>
+                <h5>Sophia C.</h5>
+              </div>
+              <!-- rating -->
+              <div class="rating" data-rating="1">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+
+              <!-- review -->
+              <p>
+                “Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
+                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
+                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
+                normale Anordnung von Buchstaben darstellt und somit nach
+                lesbarer Sprache aussieht.”
+              </p>
+            </li>
+            <li>
+              <div class="author-info">
+                <div class="avatar">AT</div>
+                <h5>Amir T.</h5>
+              </div>
+              <!-- rating -->
+              <div class="rating" data-rating="4">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+
+              <!-- review -->
+              <p>
+                “Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
+                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
+                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
+                normale Anordnung von Buchstaben darstellt und somit nach
+                lesbarer Sprache aussieht.”
+              </p>
+            </li>
+            <li>
+              <div class="author-info">
+                <div class="avatar">MG</div>
+                <h5>Maria G.</h5>
+              </div>
+              <!-- rating -->
+              <div class="rating" data-rating="4">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+
+              <!-- review -->
+              <p>
+                “Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
+                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
+                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
+                normale Anordnung von Buchstaben darstellt und somit nach
+                lesbarer Sprache aussieht.”
+              </p>
+            </li>
+            <li>
+              <div class="author-info">
+                <div class="avatar">TR</div>
+                <h5>Tariq R</h5>
+              </div>
+              <!-- rating -->
+              <div class="rating" data-rating="4">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+
+              <!-- review -->
+              <p>
+                “Es ist ein lang erwiesener Fakt, dass ein Leser vom Text
+                abgelenkt wird, wenn er sich ein Layout ansieht. Der Punkt,
+                Lorem Ipsum zu nutzen, ist, dass es mehr oder weniger die
+                normale Anordnung von Buchstaben darstellt und somit nach
+                lesbarer Sprache aussieht.”
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--  ABOUT  -->
+      <section id="about">
+        <div class="about-left">
+          <span class="sub-title"> who we are </span>
+          <h2>algeria's local travel experts</h2>
+          <p>
+            ExploreDzair is a team of passionate local guides, travel planners,
+            and storytellers born and raised across Algeria's diverse regions.
+            We believe our country is the most underrated destination on earth —
+            and it's our mission to change that, one journey at a time.
+          </p>
+          <p>
+            Every itinerary we craft is built on firsthand knowledge, genuine
+            relationships with local communities, and an uncompromising
+            commitment to authentic, responsible travel. From the Sahara to the
+            sea, we know every corner.
+          </p>
+        </div>
+        <!--   statistics   -->
+        <div class="stats">
+          <div class="stat"><span>7</span> UNESCO sites</div>
+          <div class="stat"><span>1 200 km</span> mediterranean coast</div>
+          <div class="stat"><span>2M km²</span> sahara desert</div>
+          <div class="stat"><span>4.9 ★</span> average rating</div>
+        </div>
+      </section>
+
+      <!--  CONTACT  -->
+      <section id="contact">
+        <div class="section-head">
+          <div class="section-head-left">
+            <div class="sub-title">Get in Touch</div>
+            <h2>Start Your <span>Algerian Journey</span></h2>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-left">
+            <h3>We'd love to hear from you</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+              ipsa temporibus, fugit ut aliquam quo laboriosam incidunt illum
+              vero. Quidem ut quos odit corrupti totam fuga eos nemo alias
+              dolore.
+            </p>
+          </div>
+          <ul class="contact-list">
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <strong>Phone / WhatsApp</strong>
+              <span>+213 (0) 550 123 456</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <strong>Email</strong>
+              <span>hello@exploredzair.dz</span>
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <strong>Office</strong>
+              <span>12 Rue Didouche Mourad, Alger Centre</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <strong>Hours</strong>
+              <span>Saturday – Thursday · 08:00 – 19:00</span>
+            </li>
+          </ul>
+
+          <form class="contact-form">
+            <input type="text" placeholder="Full name" />
+            <input type="email" placeholder="Email address" />
+            <input type="tel" placeholder="Phone / WhatsApp" />
+            <select>
+              <option value="" disabled selected>Interested in…</option>
+              <option>Grand Sahara Circuit</option>
+              <option>Roman Legacy Trail</option>
+              <option>Mediterranean Escape</option>
+              <option>Custom Itinerary</option>
+              <option>Other / General Enquiry</option>
+            </select>
+            <textarea
+              placeholder="Tell us about your dream trip — group size, dates, special interests…"
+            ></textarea>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--   footer   -->
+    <footer>
+      <div class="footer-main">
+        <section class="footer-brand-col">
+          <p class="footer-logo">
+            <i class="fas fa-campground"></i> Explore<span>Dzair</span>
+          </p>
+          <p>
+            Algeria's most authentic travel experience. Born local. Built for
+            explorers. We go where the guidebooks don't.
+          </p>
+          <nav class="footer-socials" aria-label="Social media">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </nav>
+        </section>
+
+        <nav class="footer-col" aria-label="Explore">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#upcoming">Upcoming Trips</a></li>
+            <li><a href="#review">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Top Destinations">
+          <h5>Top Destinations</h5>
+          <ul>
+            <li><a href="#destinations">Taghit</a></li>
+            <li><a href="#destinations">Djémila</a></li>
+            <li><a href="#destinations">Tassili n'Ajjer</a></li>
+            <li><a href="#contact">Custom Route</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Company">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <span>ExploreDzair</span>. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </nav>
+        <p>Made with <span>♥</span> in Algeria</p>
+      </div>
+    </footer>
+  </body>
+</html>

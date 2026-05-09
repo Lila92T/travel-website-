@@ -1,0 +1,61 @@
+:root {  
+  /* text font and backgroung */
+--charcoal: #1e2128;
+--text: #2c2f38; 
+--bg: #fafafa;
+
+  /* sub titles options === main & btns ? */
+--desert-sand:#f4dedd;                            --terracotta: #bc5e35; 
+--cactus: #98970f;
+}
+
+*{
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: 0.3s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Bricolage Grotesque", sans-serif;
+  color: var(--charcoal);
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--bg);
+}
+img{
+  display: block; 
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+/* ==== media ==== */
+@media (max-width: 1200px){
+  
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 990px){
+
+  html{
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 450px){
+  
+  html{
+    font-size: 50%;
+  }
+}
