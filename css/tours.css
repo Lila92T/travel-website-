@@ -1,3 +1,38 @@
+/* Accordion overrides */
+#tours .accordion {
+  margin-top: 2rem;
+}
+#tours .accordion-item {
+  border: 1px solid var(--desert-sand);
+  border-radius: 1rem !important;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+#tours .accordion-button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+}
+#tours .accordion-button:not(.collapsed) {
+  background: var(--desert-sand);
+  color: var(--text);
+  box-shadow: none;
+}
+#tours .accordion-button::after {
+  margin-left: 0; /* arrow stays at end */
+}
+#tours .accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--desert-sand);
+}
+#tours .accordion-body {
+  background: var(--bg);
+  padding: 2rem;
+}
+
 #tours {
   margin: 4% 8%;
 }
